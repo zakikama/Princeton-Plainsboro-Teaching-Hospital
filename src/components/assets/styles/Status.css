@@ -1,0 +1,26 @@
+.Status{
+    height: 50px;
+    width: 300px;
+    background-color: #1D1D1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Status .box, .Status .box p{
+    background-color: #1D1D1D;
+}
+
+.Status .box p{
+    text-align: center;
+    color: white;
+}
+
+.box-1{
+    border-bottom-left-radius: 15px;
+}
+
+.box-3{
+    border-bottom-right-radius: 15px;
+}

@@ -1,13 +1,360 @@
-body {
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  background-color: #343A40;
+}
+
+body{
   margin: 0;
+  background-color :#343a40;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  min-height: 80vh;
+  width: 99%;
+  display: flex;
+  flex-direction: column;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.navbar-brand{
+  padding: 0%;
+  margin: 0%;
+ 
+}
+/* Global Button Styles */
+
+
+a {
+  color: #BFC0C0;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+a.animated-button:link, a.animated-button:visited {
+	position: absolute;
+  
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: white;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+  
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #D24D57;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+  right: 0px;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: white;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/* Victoria Buttons */
+
+a.animated-button.victoria-one {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-one:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+
+.bs-example{
+  margin: 10px;
+}
+.signUpLoginBox {
+
+  display: flex;
+  justify-content: center;
+}
+
+.slContainer {
+  flex: 0 1 80%;
+  display: flex;
+}
+
+.formBoxLeftSignup {
+  min-height: 500px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxLeftLogin {
+  min-height: 500px;
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxLeftForget {
+  min-height: 500px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  flex: 0 1 50%;
+}
+
+.formBoxRight {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.formBoxRight span {
+  justify-content: center;
+  display: block;
+  color: var(--red-color);
+  text-align: center;
+  border: 1px solid var(--red-color);
+  padding: 10px;
+  margin: 15px 0;
+}
+
+.formContent {
+  justify-content: center;
+  width: 100%;
+  color: #FFF;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.formContent h2 {
+  justify-content: center;
+  margin: 0 0 40px 0;
+  padding: 0;
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+.formContent .inputBox {
+  justify-content: center;
+  position: relative;
+  height: 80px;
+}
+
+.formContent .inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid var(--white-color);
+  outline: none;
+}
+
+.formContent .inputBox label {
+  justify-content: center;
+  color: var(--white-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 17px;
+  pointer-events: none;
+  -webkit-transition: 0.2s ease-in;
+  -moz-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.formContent .inputBox input:focus~label,
+.formContent .inputBox input:valid~label {
+  justify-content: center;
+  top: -30px;
+  left: 0;
+  color: var(--white-color);
+  font-size: 16px;
+  font-style: italic;
+}
+.mainbox {
+  justify-content: center;
+  
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+  .err {
+    color: #D24D57;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    text-align: center;
+    left: 35%;
+    top: 8%;
+  }
+
+.far {
+  position: absolute;
+  font-size: 8.5rem;
+  left: 42%;
+  top: 15%;
+  color: #D24D57;
+}
+
+ .err2 {
+    color: #D24D57;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position:absolute;
+    left: 68%;
+    top: 8%;
+  }
+
+.msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position:absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%;
+  }
+
+a {
+  text-decoration: none;
+  color: #D24D57;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+ .landing{
+    position: absolute;
+    right: 0px;
+    
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+landing{
+  justify-content: center;
+}
+.footer{
+  color: #FFF;
+  margin-top: auto;
+  text-align: center;
+}
+mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+.mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+.about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+.blog {
+  top: 80px;
+  background-color: #2196F3; /* Blue */
+}
+
+.projects {
+  top: 140px;
+  background-color: #f44336; /* Red */
+}
+
+.contact {
+  top: 200px;
+  background-color: #555 /* Light Black */
+}
+.imagebg{
+  width:100%;
+  height:460px;
+  object-fit:cover;
+  object-position:50% 50%;
+ }
+ .flex-container {
+  display: flex;
+}
+
+.flex-child {
+  flex: 1 auto ;
+
+  
+}  
+

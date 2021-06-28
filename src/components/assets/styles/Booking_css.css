@@ -1,0 +1,86 @@
+body{
+	color: #fff;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.formBox{
+	margin-top: 10px;
+	padding: 50px;
+}
+.formBox  h1{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+	font-size: 48px;
+}
+.inputBox{
+	color: #fff;
+	position: relative;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+.inputBox .inputText{
+	position: absolute;
+    font-size: 24px;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .5;
+}
+.inputBox .input{
+	position: relative;
+	width: 70%;
+	height: 50px;
+	background: transparent;
+	border: none;
+    outline: none;
+    font-size: 24px;
+    border-bottom: 1px solid #D24D57;
+
+}
+.focus .inputText{
+	transform: translateY(-30px);
+	font-size: 18px;
+	opacity: 1;
+	color: #00bcd4;
+
+}
+textarea{
+	color: #fff;
+	height: 100px !important;
+}
+input {
+	margin: 50px;
+	font-family: inherit;
+  }
+  /* End of Page styling */
+  
+  /* Simple button styling -- No animation */
+  .simple {
+	font-size: 20px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	padding: 13px 50px 13px;
+	outline: 0;
+	border: 1px solid #D24D57;
+	cursor: pointer;
+	position: relative;
+	background-color:#D24D57;
+  }
+  
+  .simple::after {
+	content: "";
+	background-color: black;
+	width: 100%;
+	z-index: -1;
+	position: absolute;
+	height: 100%;
+	top: 7px;
+	left: 7px;
+  }
